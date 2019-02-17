@@ -1,0 +1,18 @@
+I have created an Internal DSL for defining mathmatical functions to be run on dataseries.
+An example of the DSL and running it can be found in Program.cs
+
+##----MODEL----
+An overview of the Semantic model developed can be seen in ClassDiagram.png.
+
+The semantics may be similar to an ExpressionTree, however this concept was discovered after the fact, and as such the solution may be improved by looking that up.
+
+##----DSL / BUILDER----:
+The DSL is achieved through heavy use of operator overloading, see FunctionExpression.cs and DataSeriesExpression.cs. A bit unsure of the dual-purpose of the classes serving both as model elements an builders.
+
+A cool addition is the implemenation of Dynamic Reception through the dynamic feature of C#, see DataSeriesFunctions.cs.
+
+##----Running----:
+The .dll found in the build folder is targetted at .net-core 2.1, with .net core installed it should simply be a matter of running:
+dotnet .\MDSDP-Internal-DSL.dll
+
+For building, either use Visual Studio or Visual Studio Code (https://docs.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-code)
