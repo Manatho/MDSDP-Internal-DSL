@@ -1,5 +1,7 @@
 namespace MDSDP_Internal_DSL
 {
+    // Handles nesting of FunctionExpression and the order of which they happen, 
+    // -> builds up the expression tree
     public class MergeFunction : FunctionExpression
     {
         private FunctionExpression first;

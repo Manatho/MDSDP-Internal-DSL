@@ -16,3 +16,11 @@ The .dll found in the build folder is targetted at .net-core 2.1, with .net core
 dotnet .\MDSDP-Internal-DSL.dll
 
 For building, either use Visual Studio or Visual Studio Code (https://docs.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-code)
+
+##----Running----:
+Console output when running the .dll (See Program.cs):
+
+Sum of Three: 10000
+MinOfFirst: 1
+AverageOfMinAndMaxValues: 2,5
+SumOfTwo: 120

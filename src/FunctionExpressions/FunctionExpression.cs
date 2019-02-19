@@ -2,6 +2,7 @@ using System.Collections.Generic;
 
 namespace MDSDP_Internal_DSL
 {
+    //FunctionExpression builder, exclusively build on operatoroverloading
     public abstract class FunctionExpression
     {
         public abstract double Execute(double[][] data);
